@@ -1,7 +1,6 @@
 ﻿/* Prueba #1: Verificar el funcionamiento de la declaración de variables anteponiendo el carácter "@" */
 
 using static System.Console;
-using System.Threading;
 
 namespace _1_Declaración_variables
 {
@@ -9,29 +8,38 @@ namespace _1_Declaración_variables
     {
         static void Main(string[] args)
         {
-            // Declaración e inicialización de variables
-            double resultado_suma = 0.0;
+            // Impresión de resultados
+            WriteLine("El resultado de sumar 2.2 y 2.2 es: " + SumaNumerosDecimales(2.2, 2.2).ToString());
+            WriteLine("El resultado de sumar 2 y 2 es: " + SumaNumerosEnteros(2, 2).ToString());
 
-            // llamada al método "suma"
-            resultado_suma = suma(2.2, 2.2);
-
-            // Impresión del resultado
-            WriteLine("El resultado de sumar 2.2 y 2.2 es: " + resultado_suma.ToString());
-
-            // Esta instrucción detiene la ejecución durante 4000 milisegundos
-            Thread.Sleep(4000);
+            // Esta instrucción detiene la ejecución del programa hasta que el usuario presione cualquier tecla
+            ReadKey();
         }
 
-        static double suma(double operando_1, double operando_2)
+        private static double SumaNumerosDecimales(double operando1, double operando2)
         {
             // Declaración e inicialización de variables
             double @resultado = 0;
 
-            // Utilización de la variable "resultado" anteponiendo el carácter "@"
-            @resultado = operando_1 + operando_2;
+            // Utilización de la variable "resultado": Anteponer el carácter "@" es opcional, ya que el nombre de la variable NO coincide con una palabra reservada del lenguaje
+            @resultado = operando1 + operando2;
 
-            // Utilización de la variable "resultado" sin anteponer el carácter "@"
+            // Utilización de la variable "resultado": Anteponer el carácter "@" es opcional, ya que el nombre de la variable NO coincide con una palabra reservada del lenguaje
             return resultado;
+        }
+
+        private static int SumaNumerosEnteros(int operando1, int operando2)
+        {
+            // Declaración e inicialización de variables
+            int @int = 0;
+
+            // Utilización de la variable "int": Anteponer el carácter "@" en este caso es obligatorio, ya que el nombre de la variable coincide con una palabra reservada del lenguaje
+            @int = operando1 + operando2;
+
+            // Utilización de la variable "int": Anteponer el carácter "@" en este caso es obligatorio, ya que el nombre de la variable coincide con una palabra reservada del lenguaje
+            return @int;
+
+
         }
     }
 }
