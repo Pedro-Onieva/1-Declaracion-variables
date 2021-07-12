@@ -1,6 +1,7 @@
 ﻿/* Prueba #1: Es posible declarar cualquier variable en el código anteponiendo el carácter "@" al nombre de la variable, sin embargo, la 
  * utilización de este carácter para la declaración de variables únicamente resulta obligatoria cuando el nombre de la variable coincide 
- * con una palabra reservada del lenguaje C#. Este ejemplo pretende ilustrar cuando la utilización del carácter "@" resulta opcional u obligatoria */
+ * con una palabra reservada del lenguaje C#. Así pues, este ejemplo pretende ilustrar cuando la utilización del carácter "@" resulta 
+ * opcional u obligatoria */
 
 using static System.Console;
 
