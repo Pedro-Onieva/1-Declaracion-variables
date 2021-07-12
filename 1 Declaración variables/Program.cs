@@ -18,28 +18,22 @@ namespace _1_Declaración_variables
 
         private static double SumaNumerosDecimales(double operando1, double operando2)
         {
-            // Declaración e inicialización de variables
+            // Anteponer el carácter "@" es opcional (el nombre de la variable "resultado" NO coincide con ninguna palabra reservada del lenguaje)
             double @resultado = 0;
 
-            // Utilización de la variable "resultado": Anteponer el carácter "@" es opcional, ya que el nombre de la variable NO coincide con una palabra reservada del lenguaje
             @resultado = operando1 + operando2;
 
-            // Utilización de la variable "resultado": Anteponer el carácter "@" es opcional, ya que el nombre de la variable NO coincide con una palabra reservada del lenguaje
             return resultado;
         }
 
         private static int SumaNumerosEnteros(int operando1, int operando2)
         {
-            // Declaración e inicialización de variables
+            // Anteponer el carácter "@" es obligatorio (el nombre de la variable "int" coincide con ninguna palabra reservada del lenguaje)
             int @int = 0;
 
-            // Utilización de la variable "int": Anteponer el carácter "@" en este caso es obligatorio, ya que el nombre de la variable coincide con una palabra reservada del lenguaje
             @int = operando1 + operando2;
 
-            // Utilización de la variable "int": Anteponer el carácter "@" en este caso es obligatorio, ya que el nombre de la variable coincide con una palabra reservada del lenguaje
             return @int;
-
-
         }
     }
 }
